@@ -30,6 +30,8 @@ I will do this by comparing the word given as an argument and the word in its re
 
 /*
   Add written explanation of your solution here
+
+  In order to evaluate if the argument is a palindrome or not, I had the argument compared with its value reversed. I also made sure my code handles edge cases such as empty strings and numbers.
 */
 
 // You can run `node index.js` to view these console logs
