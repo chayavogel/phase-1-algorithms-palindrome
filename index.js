@@ -4,17 +4,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
 
-  // 1. Pass a string as an argument to the function.
-  // 2. Using the else if conditionals, check if the word is an empty string. If it is, return false.
-  // 3. Then, check if the word is a string. If it is, then on the word, add three build in js methods one after the other: string.split, array.reverse, and array.join.
-  // 4. Check if the string argument strictly equals the variable "reversedWord" (which is the string but backwards) and return it, expecting a value of "true" if they equal eachother and "false" if they do not.
-  // 6. If the word is not a string, then return false.
-
+//If the argument is an EMPTY string, return false.
   if (word === "") {
     return false
+// If the argument is a string, return true if the argument strictly equals itself in reverse, and false if not.
   } else if (typeof word === "string") {
     const reversedWord = word.split("").reverse().join("")
     return word === reversedWord
+// If the argument data type is not a string (such as a number), return false (preventing a non string from being reversed, which will result in a error.)
   } else {
     return false
   }
@@ -29,7 +26,7 @@ I will do this by comparing the word given as an argument and the word in its re
 */
 
 /*
-  Add written explanation of your solution here
+  Add written explanation of your solution here:
 
   In order to evaluate if the argument is a palindrome or not, I had the argument compared with its value reversed. I also made sure my code handles edge cases such as empty strings and numbers.
 */
