@@ -1,6 +1,3 @@
-// My function will take in a word as an argument and return "true" if it is a palindrome (a word that reads the same both ways) and "false" if it not.
-
-
 function isPalindrome(word) {
   // Write your algorithm here
 
@@ -66,6 +63,16 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome(66733));
+
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("h"));
+
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("mom"));
 }
 
 module.exports = isPalindrome;
